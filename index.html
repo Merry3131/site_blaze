@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Мой магазин</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="bg-[#182033] text-white">
+        <header class="container mx-auto px-4">
+            <div class="flex items-center justify-between p-4">
+                <!-- Логотип и текст -->
+                <div class="flex items-center">
+                    <img src="../img/Group 2.png" alt="Логотип" class="h-10">
+                    <h5 class="ml-3 text-center p-2">Твой стиль.<br>Твой скин.</h5>
+                </div>
+                
+                <!-- Навигация и кнопка -->
+                <div class="flex items-center space-x-10">
+                    <!-- Навигационные ссылки с одинаковыми отступами -->
+                    <div class="flex items-center space-x-10">
+                        <h5 class="py-2">Главная</h5>
+                        <h5 class="py-2">Купить скины</h5>
+                        <h5 class="py-2">FAQ</h5>
+                    </div>
+                    
+                    <!-- Кнопка -->
+                    <button class="ml-8 py-2 px-6 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                        ВОЙТИ
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+    
+    <!-- section 1 -->
+    <div class="bg-[url(../img/bg.png)] bg-cover bg-no-repeat text-white">
+        <section class="container mx-auto px-4">
+
+            <!-- Заголовок -->
+            <div class="py-14 flex flex-col items-center lg:items-start">
+                <h1 class="text-7xl font-bold py-10 text-center lg:text-left">Лучшие цены на скины<br>только на</h1>
+                <img src="../img/BLAZE.COM.png" alt="" class="">
+            </div>
+
+            <!-- Блоки Выгодно, Гарантия, Удобно -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-20 text-black pb-20 mb-24">
+            <!-- На мобильных: 1 колонка, на md: 3 колонки -->
+            <div class="bg-[#CFE2FF] text-center p-5 rounded-[1vw]" id="block_one">
+                <div class="flex items-end justify-center mb-3">
+                    <img src="../img/idea.png" alt="" class="mr-2 mb-1 w-8 h-8">
+                    <h1 class="text-3xl font-bold">Выгодно</h1>
+                </div>
+                <p class="text-lg">Потому что у нас нет скрытых<br>сборов и комиссий при выводе.</p>
+            </div>
+            <div class="bg-[#CFE2FF] text-center p-5 rounded-[1vw]" id="block_two">
+                <div class="flex items-end justify-center mb-3">
+                    <img src="../img/note.png" alt="" class="mr-4 mb-1 w-8 h-8">
+                    <h1 class="text-3xl font-bold">Гарантия</h1>
+                </div>
+                <p class="text-lg">Берем на себя все риски и решаем<br>спорные ситуации в вашу пользу</p>
+            </div>
+            
+            <div class="bg-[#CFE2FF] text-center p-5 rounded-[1vw]" id="block_three">
+                <div class="flex items-end justify-center mb-3">
+                    <img src="../img/like.png" alt="" class="mr-2 mb-1 w-8 h-8">
+                    <h1 class="text-3xl font-bold">Удобно</h1>
+                </div>
+                <p class="text-lg">Можно купить скин в 3 клика,<br>не отвлекаясь от игры.</p>
+            </div>
+        </div>
+            
+        </section>
+        <!-- Способо оплаты -->
+        <div class="bg-[#182033] p-2">
+            <div class="flex justify-around items-center gap-8 w-full mb-8">
+                <img src="../img/cards.png" alt="">
+                <img src="../img/apple_pay.png" alt="">
+                <img src="../img/bitcoin.png" alt="">
+            </div>
+            <hr class="">
+            <!-- статистика -->
+            <div class="bg-[#182033] p-2 mt-20">
+                <h1 class="text-center text-5xl font-bold">Наша Статистика</h1><br><br>
+                <div class="grid grid-cols-1 items-center text-center lg:grid-cols-4 max-w-5xl min-w-md m-auto mb-16" id="stats_sections">
+                    <div class="p-7">
+                        <h1 class="text-5xl" id="count_otz">0</h1><br>
+                        <h1 class="">Положительных отзывов</h1>
+                    </div>
+
+                    <div class="p-7">
+                        <h1 class="text-5xl" id="count_orders">0</h1><br>
+                        <h1 class="">Скинов продано</h1>
+                    </div>
+
+                    <div class="p-7">
+                        <h1 class="text-5xl" id="ocenka">0</h1><br>
+                        <h1 class="">Средняя оценка</h1>
+                    </div>
+
+                    <div class="p-7">
+                        <h1 class="text-5xl" id="years">0</h1><br>
+                        <h1 class="">Лет на рынке</h1>
+                    </div>
+                    
+                </div>
+                <hr class="mb-20">
+                <!-- section 2 -->
+                <section class="container mx-auto px-4 lg:px-8 mb-20">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+                        <!-- Каталог -->
+                        <div class="lg:col-span-2 bg-[#111825] p-6 lg:p-8 rounded-xl order-2 lg:order-1">
+                            <h1 class="text-center text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 lg:mb-12">Каталог</h1>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6">
+                                <!-- Повторяющиеся карточки товаров -->
+                                <div class="flex flex-col p-4 items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300">
+                                    <img src="../img/like.png" alt="" class="h-32 w-32 lg:h-36 lg:w-36 p-2">
+                                    <h2 class="p-2 text-lg">Название</h2>
+                                    <p class="text-xl lg:text-2xl p-4">Цена</p>
+                                    <button class="p-2 text-lg lg:text-xl bg-green-600 text-white rounded-lg hover:bg-green-700 hover:text-[#182033] w-full max-w-[200px] transition-colors duration-300">
+                                        Купить
+                                    </button>
+                                </div>
+
+                                <div class="flex flex-col p-4 items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300">
+                                    <img src="../img/like.png" alt="" class="h-32 w-32 lg:h-36 lg:w-36 p-2">
+                                    <h2 class="p-2 text-lg">Название</h2>
+                                    <p class="text-xl lg:text-2xl p-4">Цена</p>
+                                    <button class="p-2 text-lg lg:text-xl bg-green-600 text-white rounded-lg hover:bg-green-700 hover:text-[#182033] w-full max-w-[200px] transition-colors duration-300">
+                                        Купить
+                                    </button>
+                                </div>
+
+                                <div class="flex flex-col p-4 items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300">
+                                    <img src="../img/like.png" alt="" class="h-32 w-32 lg:h-36 lg:w-36 p-2">
+                                    <h2 class="p-2 text-lg">Название</h2>
+                                    <p class="text-xl lg:text-2xl p-4">Цена</p>
+                                    <button class="p-2 text-lg lg:text-xl bg-green-600 text-white rounded-lg hover:bg-green-700 hover:text-[#182033] w-full max-w-[200px] transition-colors duration-300">
+                                        Купить
+                                    </button>
+                                </div>
+
+                                <div class="flex flex-col p-4 items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300">
+                                    <img src="../img/like.png" alt="" class="h-32 w-32 lg:h-36 lg:w-36 p-2">
+                                    <h2 class="p-2 text-lg">Название</h2>
+                                    <p class="text-xl lg:text-2xl p-4">Цена</p>
+                                    <button class="p-2 text-lg lg:text-xl bg-green-600 text-white rounded-lg hover:bg-green-700 hover:text-[#182033] w-full max-w-[200px] transition-colors duration-300">
+                                        Купить
+                                    </button>
+                                </div>
+
+                                <div class="flex flex-col p-4 items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300">
+                                    <img src="../img/like.png" alt="" class="h-32 w-32 lg:h-36 lg:w-36 p-2">
+                                    <h2 class="p-2 text-lg">Название</h2>
+                                    <p class="text-xl lg:text-2xl p-4">Цена</p>
+                                    <button class="p-2 text-lg lg:text-xl bg-green-600 text-white rounded-lg hover:bg-green-700 hover:text-[#182033] w-full max-w-[200px] transition-colors duration-300">
+                                        Купить
+                                    </button>
+                                </div>
+
+                                <div class="flex flex-col p-4 items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300">
+                                    <img src="../img/like.png" alt="" class="h-32 w-32 lg:h-36 lg:w-36 p-2">
+                                    <h2 class="p-2 text-lg">Название</h2>
+                                    <p class="text-xl lg:text-2xl p-4">Цена</p>
+                                    <button class="p-2 text-lg lg:text-xl bg-green-600 text-white rounded-lg hover:bg-green-700 hover:text-[#182033] w-full max-w-[200px] transition-colors duration-300">
+                                        Купить
+                                    </button>
+                                </div>
+
+                                
+                                <!-- ... остальные карточки (повторить 8 раз) -->
+                            </div>
+                        </div>
+
+                        <!-- Акции -->
+                        <div class="bg-[#111825] p-6 lg:p-8 rounded-xl order-1 lg:order-2 lg:col-span-1">
+                            <h1 class="text-center text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 text-red-600">Акции</h1>
+                            <div class="space-y-6">
+                                <div class="flex flex-col p-4 items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300">
+                                    <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
+                                    <h2 class="p-2 text-lg">Название</h2>
+                                    <p class="text-2xl lg:text-3xl p-4">Цена</p>
+                                    <button class="p-2 text-lg lg:text-xl bg-red-600 text-white rounded-lg hover:bg-red-700 hover:text-[#182033] w-full max-w-[200px] font-bold transition-colors duration-300">
+                                        Купить
+                                    </button>
+                                </div>
+                                <div class="flex flex-col p-4 items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300">
+                                    <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
+                                    <h2 class="p-2 text-lg">Название</h2>
+                                    <p class="text-2xl lg:text-3xl p-4">Цена</p>
+                                    <button class="p-2 text-lg lg:text-xl bg-red-600 text-white rounded-lg hover:bg-red-700 hover:text-[#182033] w-full max-w-[200px] font-bold transition-colors duration-300">
+                                        Купить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- section 3 -->
+                <section class="py-12 lg:py-20">
+                    <!-- Заголовок -->
+                    <h1 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 lg:mb-16">
+                        Отзывы
+                    </h1>
+                    
+                    <!-- Контейнер отзывов -->
+                    <div class="container mx-auto px-4 lg:px-8">
+                        <div class="bg-[#111825] rounded-xl lg:rounded-2xl p-6 lg:p-8">
+                            <!-- Количество отзывов -->
+                            <div class="text-center mb-8 lg:mb-12">
+                                <h2 class="text-lg md:text-xl lg:text-2xl text-gray-300">
+                                    Более 19200 пользователей оставили отзыв
+                                </h2>
+                            </div>
+                            
+                            <!-- Сетка отзывов -->
+                            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
+                                <!-- Отзыв 1 -->
+                                <div class="bg-[#273352] rounded-xl p-5 md:p-6 flex flex-col">
+                                    <!-- Заголовок с аватаром -->
+                                    <div class="flex items-start gap-4 mb-4">
+                                        <img src="../img/avatar.jpg" alt="Аватар" 
+                                            class="w-14 h-14 md:w-16 md:h-16 rounded-full flex-shrink-0">
+                                        <div class="flex-1">
+                                            <h3 class="text-lg font-medium text-white">Имя пользователя</h3>
+                                            <p class="text-sm text-gray-400 mt-1">2 часа назад</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Текст отзыва -->
+                                    <p class="text-gray-300 text-base leading-relaxed flex-1">
+                                        Отличный сервис! Быстрая обработка заказа, приятные цены. 
+                                        Пользуюсь уже полгода, всем рекомендую.
+                                    </p>
+                                </div>
+                                
+                                <!-- Отзыв 2 -->
+                                <div class="bg-[#273352] rounded-xl p-5 md:p-6 flex flex-col">
+                                    <div class="flex items-start gap-4 mb-4">
+                                        <img src="../img/avatar.jpg" alt="Аватар" 
+                                            class="w-14 h-14 md:w-16 md:h-16 rounded-full flex-shrink-0">
+                                        <div class="flex-1">
+                                            <h3 class="text-lg font-medium text-white">Имя пользователя</h3>
+                                            <p class="text-sm text-gray-400 mt-1">Вчера, 18:30</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="text-gray-300 text-base leading-relaxed flex-1">
+                                        Купил скин для CS:GO, все прошло гладко. 
+                                        Поддержка отвечает быстро, вывод средств занял всего 10 минут.
+                                    </p>
+                                </div>
+                                
+                                <!-- Отзыв 3 -->
+                                <div class="bg-[#273352] rounded-xl p-5 md:p-6 flex flex-col">
+                                    <div class="flex items-start gap-4 mb-4">
+                                        <img src="../img/avatar.jpg" alt="Аватар" 
+                                            class="w-14 h-14 md:w-16 md:h-16 rounded-full flex-shrink-0">
+                                        <div class="flex-1">
+                                            <h3 class="text-lg font-medium text-white">Имя пользователя</h3>
+                                            <p class="text-sm text-gray-400 mt-1">3 дня назад</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="text-gray-300 text-base leading-relaxed flex-1">
+                                        Лучший маркетплейс для игровых предметов! 
+                                        Низкие комиссии, удобный интерфейс, регулярные акции.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Кнопка "Показать еще" (опционально) -->
+                            <div class="text-center mt-8 lg:mt-12">
+                                <button class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 
+                                            text-white rounded-lg hover:bg-blue-700 transition-colors 
+                                            duration-300 text-base md:text-lg">
+                                    Показать больше отзывов
+                                    <span class="text-xl">→</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Завершающий заголовок -->
+                    <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-bold mt-12 md:mt-16 lg:mt-20">
+                        Спасибо, что выбираете нас!
+                    </h2>
+                </section>
+
+
+                <footer class="bg-[#111825] rounded-xl">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 p-6 md:p-8 lg:p-10 items-center gap-x-3 gap-3">
+                        <div class="text-center sm:text-left">
+                            <img src="../img/Group 2.png" alt="" class="w-14 h-14 md:w-16 md:h-16 mb-2">
+                            <h1 class="text-wrap">Надежный сервис для продаж скинов Steam с быстрыми выплатами</h1>
+                        </div>
+                        
+                        <div class="text-center sm:text-left">
+                            <h1 class="font-bold text-xl md:text-2xl lg:text-3xl">Помощь</h1>
+                            <h2>FAQ</h2>
+                            <h2>Как продать/купить скин</h2>
+                            <h2>Контакты</h2>
+                        </div >
+                        <div class="text-center sm:text-left">
+                            <h1 class="font-bold text-xl md:text-2xl lg:text-3xl">Полезное</h1>
+                            <h2>Отзывы</h2>
+                            <h2>Пользовательское соглашение</h2>
+                        </div>
+
+                        
+                    </div>
+                    <div class="flex gap-10 p-6 md:p-8 lg:p-10 justify-center">
+                        <img src="../img/vk.png" alt="" class="h-10">
+                        <img src="../img/tg.png" alt="" class="h-10">
+                        <img src="../img/y.png" alt="" class="h-10">
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+
+    
+    <script src="main.js"></script>
+   
+    
+</body>
+</html>
