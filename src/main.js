@@ -100,7 +100,53 @@ if (stats_sections){
     observer_1.observe(stats_sections);
 }
 
-//таймер для все1 характеристики
+// модальное окно
+
+let btn_vhod = document.querySelector("#btn_vhod");
+let close_modal = document.querySelector("#close_modal");
+let modal_vhod = document.querySelector('#modal_vhod');
+let modal_otmena = document.querySelector('#modal_otmena');
+let modal_voiti = document.querySelector('#modal_voiti');
+
+btn_vhod.addEventListener('click', function(){
+    
+    modal_vhod.classList.add('flex');
+    modal_vhod.classList.add('items-center');
+    modal_vhod.classList.add('justify-center');
+    modal_vhod.classList.remove('hidden');
+})
+close_modal.addEventListener('click', function(){
+    modal_vhod.classList.add('hidden');
+})
+modal_otmena.addEventListener('click', function(){
+    modal_vhod.classList.add('hidden');
+})
+
+//Проверка на заполнение полей при входе
+
+let login = document.querySelector('#login');
+let password = document.querySelector('#password');
+let modal_fail = document.querySelector('#modal_fail');
+let modal_fail_ok = document.querySelector('#modal_fail_ok');
+
+
+modal_voiti.addEventListener('click', function(){
+
+    let login_value = login.value;
+    let password_value = password.value;
+
+    if (login_value === '' || password_value === ''){
+        modal_fail.classList.remove('hidden');
+    }
+    else{
+        alert('Успешно!');
+    }
+    
+})
+
+modal_fail_ok.addEventListener('click', function(){
+    modal_fail.classList.add('hidden');
+})
 
 
 
