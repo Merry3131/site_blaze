@@ -11,13 +11,13 @@
     <div class="bg-[#182033] text-white border border-black">
         <header class="container mx-auto">
             <div class="flex items-center justify-between p-4">
-                <!-- Логотип и текст -->
+                
                 <div class="flex items-center">
                     <img src="../img/Group 2.png" alt="Логотип" class="h-10">
                     <h5 class="ml-3 text-center p-2 text-xs">Твой стиль.<br>Твой скин.</h5>
                 </div>
                 
-                <!-- Навигация и кнопка -->
+                
                 <div class="flex items-center space-x-10">
                     
                     <div class="flex items-center space-x-10 text-xs">
@@ -26,7 +26,7 @@
                         <a href="">FAQ</a>
                     </div>
                     
-                    <!-- Кнопка -->
+                    
                     <button class="ml-8 py-2 px-6 text-xs bg-blue-600 text-white rounded-lg hover:bg-blue-700" id="btn_vhod">
                         ВОЙТИ
                     </button>
@@ -38,18 +38,46 @@
 
  
     <!-- каталог-->
-   
-    
     <section class="mx-auto w-full bg-[#182033]">
-        
-        <div class="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 flex">
-            <input type="text" name="" id="" placeholder="Введите название" class="rounded-lg p-1 m-4 w-[50%] mx-auto">
-            <button class="bg-black text-white rounded-xl p-3 text-xs w-full max-w-[100px]">Поиск</button>
+        <!-- поиск  -->
+        <div class="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 ">
+            <div class="flex items-center justify-center w-full">
+                <input type="text" name="" id="" placeholder="Введите название" class="rounded-lg p-1 m-4 w-[50%] ">
+                <button class="bg-[#435270] text-white rounded-xl p-2 text-xs w-full max-w-[80px] border border-white hover:bg-[#272f41] shadow-lg">Поиск</button>
+            </div>
+
+            <div class="flex justify-between mb-5 text-white gap-x-5 text-sm w-[50%] mx-auto">
+                <div class="relative group bg-[#435270] rounded-xl">
+                    <div class="flex items-center gap-x-2 p-2">
+                        <button class="">Все фильтры</button>
+                        <!-- стрелка -->
+                        <div class="w-3 h-3 relative">
+                            <div class="absolute inset-0 border-r-2 border-b-2 border-white 
+                                transform -rotate-45 group-hover:rotate-45 
+                                transition-transform duration-300">
+
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Выпадающее окно -->
+                    <div class="absolute hidden group-hover:block mt-2 w-64 bg-[#435270] rounded-lg shadow-xl p-4">
+                        <h1>фильтры</h1>
+
+                    </div>
+
+                </div>
+                 
+                <button class="rounded-xl bg-[#435270] p-3 w-20 shadow-lg">Цена</button>
+                <button class="rounded-xl bg-[#435270] p-3 w-20 shadow-lg">Тип</button>
+            </div>
+            
         </div>
-       
+       <!-- акции -->
         <h1 class="text-center xl:text-4xl lg:text-4xl text-xl font-bold mb-5 text-red-600">Успей купить!</h1>
 
-        <div class="grid grid-cols-1 lg:grid-cols-6 md:grid-cols-3 gap-2 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-6 md:grid-cols-3 gap-5 px-2 sm:px-6 md:px-8 lg:px-12 xl:px-20">
 
             <div class="flex flex-col items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300 w-[90%] sm:w-[80%] md:w-full max-w-[280px] mx-auto shadow-xl  p-5" >
                 <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
@@ -110,63 +138,126 @@
             
             
         </div>
-        <!-- каталог -->
-        <div>
-            <h1 class="text-center xl:text-2xl lg:text-2xl text-lg font-bold mb-5 text-white p-5 lg:p-10">Каталог скинов</h1>
 
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-2 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20">
-                <div class="flex flex-col items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300 max-w-[300px] w-full mx-auto shadow-xl  p-5">
-                    <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
-                    <h2 class="p-2 text-lg pt-5 lg:pt-10">Название</h2>
-                    <p class="text-xl pb-3">Цена</p>
-                    <button class="p-1 text-lg bg- text-white rounded-lg bg-green-600 hover:text-[#182033] font-bold transition-colors duration-300 max-w-[200px] w-full mx-auto">
-                        Купить
-                    </button>
-                </div>
 
-                <div class="flex flex-col items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300 max-w-[300px] w-full mx-auto shadow-xl  p-5" >
-                    <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
-                    <h2 class="p-2 text-lg pt-5 lg:pt-10">Название</h2>
-                    <p class="text-xl pb-3">Цена</p>
-                    <button class="p-1 text-lg bg-green-600 text-white rounded-lg hover:text-[#182033] font-bold transition-colors duration-300 max-w-[200px] w-full mx-auto">
-                        Купить
-                    </button>
-                </div>
+        <h1 class="text-center xl:text-4xl lg:text-4xl text-lg font-bold mb-5 mt-8 text-white">Каталог скинов</h1>
 
-                <div class="flex flex-col items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300 max-w-[300px] w-full mx-auto shadow-xl  p-5">
-                    <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
-                    <h2 class="p-2 text-lg pt-5 lg:pt-10">Название</h2>
-                    <p class="text-xl pb-3">Цена</p>
-                    <button class="p-1 text-lg bg-green-600 text-white rounded-lg hover:text-[#182033] font-bold transition-colors duration-300 max-w-[200px] w-full mx-auto">
-                        Купить
-                    </button>
-                </div>
+        <div class="grid grid-cols-1 lg:grid-cols-6 md:grid-cols-3 gap-5 px-2 sm:px-6 md:px-8 lg:px-12 xl:px-20 mb-8">
 
-                <div class="flex flex-col items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300 max-w-[300px] w-full mx-auto shadow-xl  p-5">
-                    <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
-                    <h2 class="p-2 text-lg pt-5 lg:pt-10">Название</h2>
-                    <p class="text-xl pb-3">Цена</p>
-                    <button class="p-1 text-lg bg-green-600 text-white rounded-lg hover:text-[#182033] font-bold transition-colors duration-300 max-w-[200px] w-full mx-auto">
-                        Купить
-                    </button>
-                </div>
+            <div class="flex flex-col items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300 w-[90%] sm:w-[80%] md:w-full max-w-[280px] mx-auto shadow-xl  p-5" >
+                <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
+                <h2 class="p-2 text-lg pt-5 lg:pt-10">Название</h2>
+                <p class="text-xl pb-3">Цена</p>
+                <button class="p-1 text-lg bg-green-600 text-white rounded-lg hover:bg-green-700 hover:text-[#182033] font-bold transition-colors duration-300 max-w-[200px] w-full mx-auto">
+                    Купить
+                </button>
+            </div>
 
-                <div class="flex flex-col items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300 max-w-[300px] w-full mx-auto shadow-xl  p-5">
-                    <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
-                    <h2 class="p-2 text-lg pt-5 lg:pt-10">Название</h2>
-                    <p class="text-xl pb-3">Цена</p>
-                    <button class="p-1 text-lg bg-green-600 text-white rounded-lg hover:text-[#182033] font-bold transition-colors duration-300 max-w-[200px] w-full mx-auto">
-                        Купить
-                    </button>
-                </div>
+            <div class="flex flex-col items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300 w-[90%] sm:w-[80%] md:w-full max-w-[280px] mx-auto shadow-xl  p-5">
+                <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
+                <h2 class="p-2 text-lg pt-5 lg:pt-10">Название</h2>
+                <p class="text-xl pb-3">Цена</p>
+                <button class="p-1 text-lg bg-green-600 text-white rounded-lg hover:bg-green-700 hover:text-[#182033] font-bold transition-colors duration-300 max-w-[200px] w-full mx-auto">
+                    Купить
+                </button>
+            </div>
 
+            <div class="flex flex-col items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300 w-[90%] sm:w-[80%] md:w-full max-w-[280px] mx-auto shadow-xl  p-5">
+                <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
+                <h2 class="p-2 text-lg pt-5 lg:pt-10">Название</h2>
+                <p class="text-xl pb-3">Цена</p>
+                <button class="p-1 text-lg bg-green-600 text-white rounded-lg hover:bg-green-700 hover:text-[#182033] font-bold transition-colors duration-300 max-w-[200px] w-full mx-auto">
+                    Купить
+                </button>
+            </div>
+
+            <div class="flex flex-col items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300 w-[90%] sm:w-[80%] md:w-full max-w-[280px] mx-auto shadow-xl  p-5">
+                <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
+                <h2 class="p-2 text-lg pt-5 lg:pt-10">Название</h2>
+                <p class="text-xl pb-3">Цена</p>
+                <button class="p-1 text-lg bg-green-600 text-white rounded-lg hover:bg-green-700 hover:text-[#182033] font-bold transition-colors duration-300 max-w-[200px] w-full mx-auto">
+                    Купить
+                </button>
+            </div>
+
+            <div class="flex flex-col items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300 w-[90%] sm:w-[80%] md:w-full max-w-[280px] mx-auto shadow-xl  p-5">
+                <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
+                <h2 class="p-2 text-lg pt-5 lg:pt-10">Название</h2>
+                <p class="text-xl pb-3">Цена</p>
+                <button class="p-1 text-lg bg-green-600 text-white rounded-lg hover:bg-green-700 hover:text-[#182033] font-bold transition-colors duration-300 max-w-[200px] w-full mx-auto">
+                    Купить
+                </button>
+            </div>
+
+            <div class="flex flex-col items-center bg-[#273352] rounded-xl hover:transform hover:scale-[1.02] transition-transform duration-300 w-[90%] sm:w-[80%] md:w-full max-w-[280px] mx-auto shadow-xl  p-5">
+                <img src="../img/like.png" alt="" class="h-32 w-32 p-2">
+                <h2 class="p-2 text-lg pt-5 lg:pt-10">Название</h2>
+                <p class="text-xl pb-3">Цена</p>
+                <button class="p-1 text-lg bg-green-600 text-white rounded-lg hover:bg-green-700 hover:text-[#182033] font-bold transition-colors duration-300 max-w-[200px] w-full mx-auto">
+                    Купить
+                </button>
+            </div>
+
+            
+
+            
+            
+        </div>
+        
+
+        
+    
+
+       <footer class="bg-[#111825] text-white shadow-lg">
+        
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 justify-items-center">
                 
+                
+                <div class="text-left max-w-[250px]">
+                    
+                    <div class="mb-4">
+                        <img src="../img/Group 2.png" alt="" class="w-14 h-14 md:w-16 md:h-16 mb-3">
+                    </div>
+                    <p class="text-sm text-gray-300 text-wrap">
+                        Надежный сервис для продаж скинов Steam с быстрыми выплатами
+                    </p>
+                </div>
+                
+                
+                <div class="text-left max-w-[250px]">
+                    <h2 class="font-bold text-xl md:text-2xl mb-4">Помощь</h2>
+                    <div class="space-y-2">
+                        <p class="text-gray-300 hover:text-white cursor-pointer">FAQ</p>
+                        <p class="text-gray-300 hover:text-white cursor-pointer">Как продать/купить скин</p>
+                        <p class="text-gray-300 hover:text-white cursor-pointer">Контакты</p>
+                    </div>
+                </div>
+                
+               
+                <div class="text-left max-w-[250px]">
+                    <h2 class="font-bold text-xl md:text-2xl mb-4">Полезное</h2>
+                    <div class="space-y-2">
+                        <p class="text-gray-300 hover:text-white cursor-pointer">Отзывы</p>
+                        <p class="text-gray-300 hover:text-white cursor-pointer">Пользовательское соглашение</p>
+                    </div>
+                </div>
                 
             </div>
+            
+           
+            <div class="flex gap-8 justify-center mt-8 pt-8 border-t border-gray-800">
+                <img src="../img/vk.png" alt="VK" class="h-10 hover:opacity-80 cursor-pointer">
+                <img src="../img/tg.png" alt="Telegram" class="h-10 hover:opacity-80 cursor-pointer">
+                <img src="../img/y.png" alt="YouTube" class="h-10 hover:opacity-80 cursor-pointer">
+            </div>
         </div>
-     
-        
+    </footer>
+
     </section>
+
+
+    
     
 
     <script src="main.js"></script>
