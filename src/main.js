@@ -142,11 +142,17 @@ modal_voiti.addEventListener('click', function(){
         alert('Успешно!');
     }
     
-})
+});
 
 modal_fail_ok.addEventListener('click', function(){
     modal_fail.classList.add('hidden');
-})
+});
+
+
+
+
+
+
 
 
 

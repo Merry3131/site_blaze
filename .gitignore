@@ -1,6 +1,6 @@
 # Зависимости
 node_modules/
-
+dist/output.css
 # Сборка
 dist/
 *.css.map
@@ -18,3 +18,4 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
